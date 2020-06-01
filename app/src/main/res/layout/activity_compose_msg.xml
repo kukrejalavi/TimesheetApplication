@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.java.ComposeMsg"
+    android:orientation="vertical"
+    >
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    android:text="Select Employee"
+        android:textColor="@color/blackColor"
+        style="@style/TextViewformeasurements"
+    />
+
+<EditText
+    android:id="@+id/txtemp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/TextViewformeasurements"
+    android:editable="false"
+    android:backgroundTint="@color/blackColor"
+    android:textColor="@color/blackColor"
+    tools:ignore="Deprecated" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Title"
+        style="@style/TextViewformeasurements"
+        android:textColor="@color/blackColor"
+        />
+
+    <EditText
+        android:id="@+id/txttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TextViewformeasurements"
+        android:textColor="@color/blackColor"
+        android:backgroundTint="@color/blackColor"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Update"
+        style="@style/TextViewformeasurements"
+        android:textColor="@color/blackColor"
+        />
+
+    <EditText
+        android:id="@+id/txttext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TextViewformeasurements"
+        android:inputType="textMultiLine"
+        android:textColor="@color/blackColor"
+        android:backgroundTint="@color/blackColor"
+        />
+
+
+    <Button
+        android:id="@+id/Savebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/cinzel"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/border"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#2f6699"
+        android:layout_margin="5dp"
+        android:text="Save"
+        />
+</LinearLayout>

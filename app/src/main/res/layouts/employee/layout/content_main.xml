@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".EmployeeMainPage"
+    android:orientation="vertical"
+    >
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:id="@+id/fragmentcontainer"
+    ></FrameLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:orientation="horizontal"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/Dashboard"
+            style="@style/LLTBottomButtons"
+            android:onClick="bottombtnclicked"
+
+            >
+
+            <ImageView
+                android:id="@+id/imgdashboard"
+android:layout_gravity="center"
+                style="@style/LLTBottomImage"
+                android:src="@drawable/ic_timesheet"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/Projects"
+            style="@style/LLTBottomButtons"
+            android:onClick="bottombtnclicked"
+
+            >
+
+            <ImageView
+                android:id="@+id/imgprojects"
+                style="@style/LLTBottomImage"
+                android:src="@drawable/ic_explore"
+                android:layout_gravity="center"
+                />
+
+
+            <TextView
+                android:id="@+id/projects"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Projects"
+                android:textSize="10dp"
+                android:gravity="center|bottom"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:id="@+id/Calendar"
+            style="@style/LLTBottomButtons"
+            android:onClick="bottombtnclicked"
+
+            >
+
+            <ImageView
+                android:id="@+id/imgCalendar"
+                android:layout_gravity="center"
+                style="@style/LLTBottomImage"
+                android:src="@drawable/ic_calendar"
+                />
+
+
+            <TextView
+                android:id="@+id/calendar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Calendar"
+                android:textSize="10dp"
+                android:gravity="center|bottom"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Notifications"
+            style="@style/LLTBottomButtons"
+            android:onClick="bottombtnclicked"
+
+            >
+
+            <RelativeLayout
+                android:id="@+id/badge_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/relative_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imgnotifications"
+                        style="@style/LLTBottomImage"
+                        android:src="@drawable/ic_notification"
+                        />
+                </RelativeLayout>
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/relative_layout"
+                    android:background="@drawable/item_count"
+                    android:text="100"
+                    android:textColor="#FFF"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Editprofile"
+            style="@style/LLTBottomButtons"
+            android:onClick="bottombtnclicked"
+
+            >
+
+            <ImageView
+                android:id="@+id/imgeditprofile"
+                android:layout_gravity="center"
+                style="@style/LLTBottomImage"
+                android:src="@drawable/ic_username"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

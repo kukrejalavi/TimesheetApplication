@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    tools:context=".Admin.java.CreateAccount"
+    android:background="@color/whiteColor"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Reject Reason"
+        android:textColor="#2f6699"
+        android:textSize="25dp"
+        android:background="@null" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"
+        />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight = "1"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/txtreason"
+                android:hint="Please Enter Reason"
+                android:inputType="textMultiLine"
+                style="@style/Makeappts"
+                android:textColor="@color/blackColor"
+                />
+
+
+
+
+
+                <Button
+                    android:id="@+id/Savebtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/cinzel"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/border"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#2f6699"
+                    android:padding="5dp"
+                    android:text="Save"
+                    />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

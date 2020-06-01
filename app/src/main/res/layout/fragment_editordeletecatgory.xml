@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.java.editordeletecategory"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+
+            <TextView
+                style="@style/TextViewformeasurements"
+                android:text="Category"
+                android:layout_width="match_parent"
+                android:textColor="@color/blackColor"
+                />
+
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:id="@+id/spinnercategory"
+                    />
+
+
+
+
+            <TextView
+                style="@style/TextViewformeasurements"
+                android:text="Project"
+                android:layout_width="match_parent"
+                android:textColor="@color/blackColor"
+                />
+
+
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/projectspinner"
+                style="@style/TextViewformeasurements"
+                android:layout_width="match_parent"
+                android:textColor="@color/blackColor"
+                android:layout_margin="10dp"
+                />
+
+
+
+
+            <TextView
+                style="@style/TextViewformeasurements"
+                android:text="End date"
+                android:textColor="@color/blackColor"
+android:layout_width="match_parent"
+                />
+
+
+
+            <TextView
+                android:id="@+id/enddate"
+                style="@style/TextViewformeasurements"
+                android:textColor="@color/blackColor"
+                android:layout_width="match_parent"
+                />
+
+
+
+            <TextView
+                style="@style/TextViewformeasurements"
+                android:text="Rates"
+                android:textColor="@color/blackColor"
+                android:layout_width="match_parent"
+                />
+
+
+            <EditText
+                android:digits="0123456789"
+                android:inputType="number"
+                android:id="@+id/rates"
+                android:layout_width="match_parent"
+                style="@style/TextViewformeasurements"
+                android:textColor="@color/blackColor"
+                />
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/transport"
+            android:layout_gravity="center_horizontal|center"
+            >
+
+            <Button
+
+                style="@style/TextViewformeasurements"
+                android:id="@+id/editbtn"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/cinzel"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/border"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#2f6699"
+                android:padding="10dp"
+                android:text="Update"
+                />
+
+            <Button
+
+                style="@style/TextViewformeasurements"
+                android:text="Delete"
+                android:id="@+id/deletebtn"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/cinzel"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/border"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#2f6699"
+                android:padding="10dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

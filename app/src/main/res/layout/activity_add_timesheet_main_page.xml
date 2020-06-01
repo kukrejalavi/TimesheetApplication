@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Employee.java.AddTimesheetMainPage"
+    android:orientation="vertical"
+    >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+
+                    <TextView
+                        style="@style/TextViewformeasurements"
+                        android:text="Total hrs:"
+                        android:textColor="@color/blackColor"
+android:gravity="left"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginBottom="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_width="wrap_content"
+                        />
+                    <TextView
+                        style="@style/TextViewformeasurements"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/totalhrs"
+                        android:textColor="@color/blackColor"
+                        />
+
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="0dp"
+
+                        />
+
+                    <ImageButton
+                        android:layout_width="30dp"
+                        android:layout_gravity="center|right"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/ic_plus"
+                        android:id="@+id/addtimesheetbtn"
+                        android:visibility="invisible"
+
+                        />
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/border"
+                    android:layout_gravity="center_horizontal"
+                    >
+                    <ImageButton
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="2"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/ic_left"
+                        android:id="@+id/leftarrow"
+                        />
+
+                    <EditText
+                        android:editable="false"
+                        android:background="@null"
+                        android:layout_gravity="center"
+                        android:id="@+id/date"
+                        android:layout_toRightOf="@+id/leftarrow"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="12"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        tools:ignore="Deprecated" />
+
+
+
+
+
+
+                    <ImageButton
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="2"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/ic_right"
+                        android:id="@+id/rightarrow"
+                        android:layout_toRightOf="@+id/date"
+                        android:layout_alignParentRight="true"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/addtimesheetllt"
+android:orientation="vertical"
+
+>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        >
+
+                        <TextView
+                            style="@style/TextViewformeasurements"
+                            android:text="Select Project"
+                            android:gravity="left"
+                            android:textColor="@color/blackColor"
+                            android:layout_weight="2"
+                         android:layout_margin="10dp"
+                            android:layout_width="0dp"
+                            />
+
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="0dp"
+
+                            />
+<!--                        <Spinner-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:id="@+id/selectprojectspinner"-->
+<!--                            tools:ignore="MissingConstraints" />-->
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:layout_width="0dp"
+                            android:layout_weight="4"
+                            android:layout_gravity="right"
+                            android:layout_height="30dp"
+                            android:layout_margin="10dp"
+                            android:id="@+id/selectprojectspinner"
+                            />
+<!--                        <Spinner-->
+<!--                            android:spinnerMode="dropdown"-->
+<!--                            android:id="@+id/selectprojectspinner"-->
+<!--                            style="@style/Makeappts"-->
+<!--                            android:layout_width="0dp"-->
+<!--                                                android:layout_weight="4"-->
+<!--                                             android:layout_gravity="right"-->
+<!--                                                 android:layout_height="wrap_content"-->
+<!--                                                   android:layout_margin="10dp"-->
+
+<!--                            android:gravity="center_horizontal"-->
+<!--                            />-->
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+
+
+                    <EditText
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:padding="2dp"
+                        style="@style/Linearlayoutmarginmildborder"
+                        android:layout_width="0dp"
+                        android:layout_weight="5"
+                        android:textColor="@color/blackColor"
+                        android:id="@+id/txtdesc"
+android:hint="Enter Description"
+                        android:inputType="textMultiLine"
+                        />
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:layout_width="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:layout_marginLeft="5dp"
+                            android:layout_height="30dp"
+                        android:id="@+id/addpaytype"/>
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        >
+
+                        <TextView
+                            style="@style/TextViewformeasurements"
+                            android:text="Add hrs:"
+                            android:gravity="left"
+                            android:textColor="@color/blackColor"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="0dp"
+                            android:layout_marginBottom="0dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            />
+
+                        <EditText
+                            style="@style/TextViewformeasurements"
+                            android:layout_width="0dp"
+                            android:layout_weight="3"
+                            android:textColor="@color/blackColor"
+                            android:id="@+id/txtaddhrs"
+android:inputType="numberDecimal"
+                            />
+
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="0dp"
+
+                            />
+
+
+                        <Button
+                            android:id="@+id/Savebtn"
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:fontFamily="@font/cinzel"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@drawable/border"
+                            android:textColor="#FFFFFF"
+                            android:backgroundTint="#2f6699"
+                            android:padding="5dp"
+                            android:text="Save"
+                            />
+
+
+                    </LinearLayout>
+
+</LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_height="2dp"
+                    android:background="#c0c0c0"
+                    />
+
+
+
+
+
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+
+
+            </LinearLayout>
+
+
+</LinearLayout>

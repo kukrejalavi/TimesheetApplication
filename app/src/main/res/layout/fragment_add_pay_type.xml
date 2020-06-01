@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPayType"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        >
+        <EditText
+            android:hint="Paytype"
+            style="@style/TextViewformeasurements"
+            android:id="@+id/paytype"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/blackColor"
+            />
+
+        <EditText
+            android:hint="Description"
+            style="@style/TextViewformeasurements"
+            android:fontFamily="@font/cinzel"
+            android:id="@+id/description"
+            android:textColor="@color/blackColor"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_horizontal
+"
+            />
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <EditText
+                android:id="@+id/multiplier"
+                android:inputType="number"
+                android:hint="Multiplier"
+                android:digits="0123456789"
+                style="@style/TextViewformeasurements"
+                android:textColor="@color/blackColor"
+                />
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="0dp"
+
+                />
+            <RadioGroup
+                android:id="@+id/radioDefault"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content" >
+                <RadioButton
+                    android:id="@+id/yesrbt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Y"
+                    android:layout_marginRight="5dp"
+                    />
+
+
+                <RadioButton
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/norbt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="N"
+                    />
+            </RadioGroup>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/transport"
+            android:layout_gravity="center_horizontal|center"
+            >
+            <Button
+
+                style="@style/TextViewformeasurements"
+                android:id="@+id/btn"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/cinzel"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/border"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#2f6699"
+                android:padding="10dp"
+                android:text="Save"
+                />
+
+
+
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+
+    </LinearLayout>
+</LinearLayout>

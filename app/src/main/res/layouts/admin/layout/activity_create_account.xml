@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    tools:context=".Admin.java.CreateAccount"
+    android:background="@color/whiteColor"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="30dp"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"
+            />
+
+        <RelativeLayout
+            android:id="@+id/shape_layout"
+            android:background="@drawable/circle_button"
+            android:layout_width="106dp"
+            android:layout_height="106dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            >
+            <androidx.cardview.widget.CardView
+                android:id="@+id/myCardView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                >
+                <ImageView
+                    android:id="@+id/imagebtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    />
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="30dp"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight = "1"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/selectprofile"
+                style="@style/Makeappts"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                />
+            <EditText
+                android:id="@+id/name"
+                android:digits="@string/digits_text"
+                android:textColor="@color/blackColor"
+                android:hint="Please Enter Name"
+                android:nextFocusDown="@id/number"
+                android:singleLine="true"
+style="@style/Makeappts"
+                />
+
+
+
+            <EditText
+                android:inputType="number"
+                android:id="@+id/number"
+                android:hint="Please Enter Number"
+                android:maxLength="10"
+                style="@style/Makeappts"
+                android:textColor="@color/blackColor"
+                android:nextFocusDown="@id/emailid"
+                android:digits="0123456789"
+                />
+
+
+            <EditText
+                android:id="@+id/emailid"
+                android:hint="Please Enter EmailId"
+                style="@style/Makeappts"
+                android:textColor="@color/blackColor"
+                android:inputType="textEmailAddress"
+                android:digits="abcdefghijklmnopqrstuvwxyz1234567890@."
+                android:nextFocusDown="@id/password"
+                />
+
+
+            <EditText
+                android:id="@+id/password"
+                android:hint="Please Enter Password"
+                style="@style/Makeappts"
+                android:textColor="@color/blackColor"
+                android:nextFocusDown="@id/passwordhint"
+                />
+
+            <EditText
+                android:id="@+id/passwordhint"
+                android:hint="Please Enter Password Hint"
+                style="@style/Makeappts"
+                android:textColor="@color/blackColor"
+                />
+
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/transport"
+                android:layout_gravity="center_horizontal|center"
+                >
+
+                <Button
+                    android:id="@+id/Createbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/cinzel"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/border"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#2f6699"
+                    android:padding="10dp"
+                    android:text="Create"
+                    />
+
+                <Button
+                    android:id="@+id/clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/Createbtn"
+                    android:layout_marginLeft="20sp"
+                    android:text="Clear"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/cinzel"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/border"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#2f6699"
+                    android:padding="10dp"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

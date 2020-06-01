@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ResetOptions"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Reset Options"
+        android:textColor="#2f6699"
+        android:textSize="25dp"
+        android:background="@null" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password hint"
+        android:textSize="20dp"
+        android:textColor="@color/blackColor"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/passwordhint"
+        android:textSize="16dp"
+        android:textColor="@color/blackColor"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:text="OR"
+            android:textSize="25dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reset Via OTP?"
+        android:textSize="20dp"
+        android:textColor="@color/blackColor"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        />
+
+
+
+    <Button
+        android:id="@+id/sendotpbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/cinzel"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/border"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#2f6699"
+        android:padding="10dp"
+        android:text="Send OTP"
+        />
+
+</LinearLayout>

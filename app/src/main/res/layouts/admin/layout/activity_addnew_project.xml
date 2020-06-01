@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.java.AddnewProject"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        style="@style/TextViewformeasurements"
+                        android:text="Date"
+
+                        android:textColor="@color/blackColor"
+                        />
+
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="0dp"
+
+                        />
+                    <TextView
+                        android:nextFocusDown="@id/projid"
+                        android:id="@+id/date"
+                        style="@style/TextViewformeasurements"
+
+                        android:textColor="@color/blackColor"
+                        />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        style="@style/TextViewformeasurements"
+                        android:text="Project ID"
+
+                        android:textColor="@color/blackColor"
+                        />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="0dp"
+
+                        />
+                    <TextView
+                        android:id="@+id/projid"
+
+                        android:textColor="@color/blackColor"
+                        android:nextFocusDown="@id/projname"
+                        style="@style/TextViewformeasurements"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+
+                        android:textColor="@color/blackColor"
+                        android:text="Project Name"
+                        style="@style/TextViewformeasurements"
+                        />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="0dp"
+
+                        />
+                    <EditText
+                        android:id="@+id/projname"
+                        style="@style/TextViewformeasurements"
+                        android:nextFocusDown="@id/desc"
+
+                        android:textColor="@color/blackColor"
+                        />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+
+                        android:textColor="@color/blackColor"
+                        android:text="Description"
+                        style="@style/TextViewformeasurements"
+                        />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="0dp"
+
+                        />
+                    <EditText
+
+                        android:textColor="@color/blackColor"
+                        android:id="@+id/desc"
+                        android:inputType="textMultiLine"
+                        style="@style/TextViewformeasurements"
+                        />
+
+
+                </LinearLayout>
+
+
+                    <Button
+                        android:textColor="#FFFFFF"
+                        android:backgroundTint="#2f6699"
+                        android:fontFamily="@font/cinzel"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/border"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/empnamebtn"
+                        android:text="Assign Project to Employee"
+                        android:inputType="textMultiLine"
+                        style="@style/TextViewformeasurements"
+                        />
+
+
+            </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:visibility="gone"
+            >
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/transport"
+            android:layout_gravity="center_horizontal|center"
+            >
+                <Button
+                    style="@style/TextViewformeasurements"
+                    android:text="Save"
+                    android:id="@+id/save"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/cinzel"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/border"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#2f6699"
+                    android:padding="10dp"
+                    />
+
+
+
+            <Button
+                style="@style/TextViewformeasurements"
+                android:text="Edit"
+                android:id="@+id/edit"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/cinzel"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/border"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#2f6699"
+                android:padding="10dp"
+                />
+
+        <Button
+            style="@style/TextViewformeasurements"
+            android:text="Delete"
+            android:id="@+id/delete"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/cinzel"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/border"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2f6699"
+            android:padding="10dp"
+            />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

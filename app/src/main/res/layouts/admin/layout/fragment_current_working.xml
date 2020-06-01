@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Admin.java.CurrentWorking">
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:id="@+id/searchtxt"
+        android:hint="Search"
+        android:drawableLeft="@drawable/ic_search"
+        android:drawablePadding="15dp"
+        android:textColorHint="#bb0101"
+        android:textColor="#bb0101"
+
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+
+            android:layout_margin="5dp"
+            android:text="Date"
+            android:gravity="center_horizontal"
+            android:inputType="textMultiLine"
+            android:fontFamily="@font/cinzel"
+            android:textSize="14dp"
+            android:textColor="#bb0101"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Project"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal"
+            android:fontFamily="@font/cinzel"
+            android:textSize="14dp"
+            android:textColor="#bb0101"
+
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+
+            android:text="Employee"
+            android:gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/cinzel"
+            android:textSize="14dp"
+            android:textColor="#bb0101"
+            />
+
+
+
+
+
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerview"
+        android:layout_margin="5dp"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>

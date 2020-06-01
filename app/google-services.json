@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "492662194757",
+    "firebase_url": "https://timesheetapplication-2ec0b.firebaseio.com",
+    "project_id": "timesheetapplication-2ec0b",
+    "storage_bucket": "timesheetapplication-2ec0b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:492662194757:android:ac5b5975b7977060b4192c",
+        "android_client_info": {
+          "package_name": "com.example.timesheetapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "492662194757-3lt3me98a80k8mvhm4vub86nn57oqgmf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.timesheetapplication",
+            "certificate_hash": "53e8a00db9efc6b7678fc85fb51d220546f8aa73"
+          }
+        },
+        {
+          "client_id": "492662194757-7st5pjk1ch9u6l22of9ql7qa531u3hkc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDR60eeMwvZCf8cKMIDMIaqDZxCT0WTMX0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "492662194757-7st5pjk1ch9u6l22of9ql7qa531u3hkc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

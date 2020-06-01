@@ -1,0 +1,260 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+<!--    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">-->
+<!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+<!--        <item name="colorPrimary">@color/colorPrimary</item>-->
+<!--        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+<!--        <item name="colorAccent">@color/colorAccent</item>-->
+<!--    </style>-->
+    <!-- Base application theme. -->
+    <style name="AppDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="boxstyle" parent="android:Theme">
+
+        <!--<item name="android:background">@drawable/custom_button</item>-->
+        <item name="android:layout_width">160dp</item>
+        <item name="android:layout_height">150dp</item>
+        <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">center</item>
+        <item name="android:textSize">25dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:bottomLeftRadius">7dp</item>
+        <item name="android:bottomRightRadius">7dp</item>
+        <item name="android:topLeftRadius">7dp</item>
+        <item name="android:topRightRadius">7dp</item>
+
+    </style>
+    <string name="digits_text">abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789&amp; </string>
+    <style name="Widget.Button.White.BlueText.BlueText.FrameImage" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/border</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+
+<!--    <style name="AppThemeMain" parent="Theme.MaterialComponents.DayNight">-->
+<!--        <item name="windowActionBar">false</item>-->
+<!--        <item name="windowNoTitle">true</item>-->
+<!--    </style>-->
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Dialog">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+
+    </style>
+
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!--<item name="android:windowBackground">@drawable/nav_menu_background</item>-->
+    </style>
+
+
+    <style name="AppFullScreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="saveBtn" parent="android:Theme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:text">Save</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+
+    <style name="PaymentTextView" parent="android:Theme">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">25dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:inputType">numberDecimal</item>
+    </style>
+
+    <style name="Linearlayoutmargin" parent="android:Theme">
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/border</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="Linearlayoutmarginmildborder" parent="android:Theme">
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/mildborder</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="PaymentEditText" parent="android:Theme">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">25dp</item>
+        <item name="android:inputType">number</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+
+    <style name="MainpageLLttext" parent="android:Theme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">#bb0101</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/cinzel</item>
+    </style>
+
+
+    <style name="MainpageLLtcount" parent="android:Theme">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">#bb0101</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/cinzel</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="CreateaccHeader" parent="android:Theme">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#bb0101</item>
+        <item name="android:textColorHint">#bb0101</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/cinzel</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+
+    <style name="LLTBottomButtons" parent="android:Theme">
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+
+    <style name="LLTBottomImage" parent="android:Theme">
+
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+
+
+    </style>
+
+
+    <style name="TextViewformeasurements" parent="android:Theme">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">#bb0101</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/josefin_sans</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
+    <style name="TextViewformeasurementsspacing" parent="android:Theme">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">#bb0101</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/josefin_sans</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
+    <style name="TextViewformeasurementsnew" parent="android:Theme">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">#bb0101</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/josefin_sans</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginLeft">100dp</item>
+        <item name="android:inputType">numberDecimal</item>
+    </style>
+
+
+    <style name="TextViewformeasurementsfinish" parent="android:Theme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">#bb0101</item>
+        <item name="android:layout_marginRight">50dp</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/josefin_sans</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
+    <style name="TextViewformeasurementsforfinish" parent="android:Theme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">#bb0101</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/josefin_sans</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
+
+    <style name="Makeappts" parent="android:Theme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">#bb0101</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/josefin_sans</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:layout_marginTop">10sp</item>
+        <item name="android:singleLine">true</item>
+
+    </style>
+
+
+    <style name="ViewMeasurements" parent="android:Theme">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">#bb0101</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/josefin_sans</item>
+
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

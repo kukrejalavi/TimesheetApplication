@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    tools:context=".Admin.java.Profile"
+    android:background="@color/whiteColor"
+    >
+
+
+
+
+
+
+        <ImageButton
+            android:id="@+id/editbtn"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+        android:src="@drawable/ic_edit"
+android:background="@null"
+            android:layout_gravity="end"
+            android:layout_margin="10dp"
+            />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+    <View
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="30dp"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"
+        />
+
+            <RelativeLayout
+                android:id="@+id/shape_layout"
+                android:background="@drawable/circle_button"
+                android:layout_width="106dp"
+                android:layout_height="106dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                >
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/myCardView"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:cardCornerRadius="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    >
+                    <ImageView
+                        android:id="@+id/imagebtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        />
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="30dp"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"
+        />
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight = "1"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/profiletxt"
+                style="@style/Makeappts"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    style="@style/TextViewformeasurements"
+                    android:text="Profile"
+                    android:textColor="@color/blackColor"
+                    />
+
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+
+                    />
+
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/txtprofile"
+                    style="@style/TextViewformeasurements"
+                    android:textColor="@color/blackColor"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    style="@style/TextViewformeasurements"
+                    android:text="Name"
+                    android:textColor="@color/blackColor"
+                    />
+
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+
+                    />
+
+
+                <EditText
+                    android:id="@+id/txtname"
+                    android:textColor="@color/blackColor"
+                    style="@style/TextViewformeasurements"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    style="@style/TextViewformeasurements"
+                    android:text="Number"
+                    android:textColor="@color/blackColor"
+                    />
+
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+
+                    />
+
+
+                <EditText
+                    android:id="@+id/txtnumber"
+                    style="@style/TextViewformeasurements"
+                    android:digits="0123456789."
+                    android:textColor="@color/blackColor"
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    style="@style/TextViewformeasurements"
+                    android:text="Emailid"
+                    android:textColor="@color/blackColor"
+                    />
+
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+
+                    />
+
+
+                <EditText
+                    android:id="@+id/txtemailid"
+                    style="@style/TextViewformeasurements"
+                    android:textColor="@color/blackColor"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    style="@style/TextViewformeasurements"
+                    android:text="Password"
+android:id="@+id/passwordtxt"
+                    android:textColor="@color/blackColor"
+                    />
+
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+
+                    />
+
+
+                <EditText
+                    android:id="@+id/txtpassword"
+                    style="@style/TextViewformeasurements"
+                    android:textColor="@color/blackColor"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+                    android:inputType="textFilter"
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/transport"
+                android:layout_gravity="center_horizontal|center"
+                >
+
+                <Button
+                    android:id="@+id/Savebtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/cinzel"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/border"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#2f6699"
+                    android:padding="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Save"
+                    android:visibility="invisible"
+                    />
+
+
+
+
+                <Button
+                    android:id="@+id/inactivebtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/cinzel"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/border"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#2f6699"
+                    android:padding="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Inactive"
+                    android:visibility="gone"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

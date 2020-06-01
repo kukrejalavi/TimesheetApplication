@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".Admin.java.SelectEmps"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_margin="20dp"
+            android:id="@+id/searchtxt"
+            android:layout_gravity="right"
+            android:hint="Search"
+            android:drawableLeft="@drawable/ic_search"
+            android:drawablePadding="15dp"
+            android:textColorHint="@color/blackColor"
+            android:textColor="@color/blackColor"
+
+            />
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:editable="false"
+            android:enabled="false"
+            android:inputType="textMultiLine"
+            android:id="@+id/selecteditems"
+            android:textColor="#2f6699"
+            tools:ignore="Deprecated" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="20dp"
+            android:editable="false"
+            android:id="@+id/selectedids"
+            android:visibility="gone"
+            android:textColor="#bb0101"
+            tools:ignore="Deprecated" />
+
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="20dp"
+            android:editable="false"
+            android:id="@+id/selecteddesc"
+            android:visibility="gone"
+            android:textColor="#bb0101"
+            tools:ignore="Deprecated" />
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            ></androidx.recyclerview.widget.RecyclerView>
+
+        </androidx.core.widget.NestedScrollView>
+        <Button
+            android:id="@+id/Savebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/cinzel"
+            android:layout_margin="10dp"
+            android:background="@drawable/border"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2f6699"
+            android:padding="10dp"
+            android:text="Save"
+            />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

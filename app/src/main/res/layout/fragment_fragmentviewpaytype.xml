@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragmentviewpaytype"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                style="@style/TextViewformeasurements"
+                android:text="Pay Type"
+                android:textColor="@color/blackColor"
+                />
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="0dp"
+
+                />
+            <EditText
+                android:enabled="false"
+                android:id="@+id/paytype"
+                style="@style/TextViewformeasurements"
+                android:textColor="@color/blackColor"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                style="@style/TextViewformeasurements"
+                android:text="Description"
+                android:textColor="@color/blackColor"
+                />
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="0dp"
+
+                />
+            <EditText
+                android:id="@+id/description"
+                style="@style/TextViewformeasurements"
+                android:inputType="textMultiLine"
+                android:textColor="@color/blackColor"
+                />
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                style="@style/TextViewformeasurements"
+                android:text="Multiplier"
+                android:textColor="@color/blackColor"
+
+                />
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="0dp"
+
+                />
+            <EditText
+                android:id="@+id/multiplier"
+                style="@style/TextViewformeasurements"
+                android:textColor="@color/blackColor"
+                android:digits="0123456789"
+                android:inputType="number"
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                style="@style/TextViewformeasurements"
+                android:text="Default"
+                android:textColor="@color/blackColor"
+
+                />
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="0dp"
+
+                />
+
+
+            <RadioGroup
+                android:id="@+id/radioDefault"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/yes"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Y"
+                />
+
+
+            <RadioButton
+                android:id="@+id/no"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="N"
+                />
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/transport"
+        android:layout_gravity="center_horizontal|center"
+        >
+
+    <Button
+        android:layout_width="wrap_content"
+        style="@style/TextViewformeasurements"
+        android:id="@+id/editbtn"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/cinzel"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/border"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#2f6699"
+
+        android:text="Update"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        style="@style/TextViewformeasurements"
+        android:text="Delete"
+        android:id="@+id/deletebtn"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/cinzel"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/border"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#2f6699"
+
+        />
+    </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>

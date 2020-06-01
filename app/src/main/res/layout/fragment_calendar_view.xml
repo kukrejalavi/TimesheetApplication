@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CalenderView">
+
+
+
+    <ImageButton
+        android:layout_gravity="end"
+        android:layout_margin="10dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/btn"
+        android:src="@drawable/ic_plus"
+        android:background="@null"
+        />
+
+
+
+    <com.github.sundeepk.compactcalendarview.CompactCalendarView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/compactcalendar_view"
+        android:layout_width="match_parent"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_height="0dp"
+        android:layout_weight = "3"
+        app:compactCalendarTargetHeight="250dp"
+        app:compactCalendarTextSize="12sp"
+        app:compactCalendarTextColor="#000"
+
+        app:compactCalendarMultiEventIndicatorColor="#000" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>

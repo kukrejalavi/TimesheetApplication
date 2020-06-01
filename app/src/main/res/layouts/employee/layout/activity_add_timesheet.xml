@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Employee.java.AddTimesheet"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            style="@style/TextViewformeasurements"
+            android:fontFamily="@font/cinzel"
+            android:id="@+id/projname"
+            android:textColor="@color/blackColor"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_horizontal
+"
+            />
+        <TextView
+            style="@style/TextViewformeasurements"
+            android:id="@+id/projdesc"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/blackColor"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                style="@style/TextViewformeasurements"
+                android:text="Date"
+                android:textColor="@color/blackColor"
+                />
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="0dp"
+
+                />
+            <TextView
+                android:id="@+id/date"
+                style="@style/TextViewformeasurements"
+                android:enabled="false"
+                android:textColor="@color/blackColor"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                style="@style/TextViewformeasurements"
+                android:text="Add Hours"
+                android:textColor="@color/blackColor"
+                />
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="0dp"
+
+                />
+            <EditText
+                android:id="@+id/addhrs"
+                style="@style/TextViewformeasurements"
+                android:digits="0123456789."
+                android:inputType="numberDecimal"
+                android:textColor="@color/blackColor"
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                style="@style/TextViewformeasurements"
+                android:text="Description"
+                android:textColor="@color/blackColor"
+
+                />
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="0dp"
+
+                />
+            <EditText
+                android:id="@+id/desc"
+                android:inputType="textMultiLine"
+                style="@style/TextViewformeasurements"
+                android:textColor="@color/blackColor"
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                style="@style/TextViewformeasurements"
+                android:text="Pay Type"
+                android:textColor="@color/blackColor"
+
+                />
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="0dp"
+
+                />
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/paytype"
+                android:inputType="textMultiLine"
+                style="@style/TextViewformeasurements"
+                android:textColor="@color/blackColor"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/transport"
+            android:layout_gravity="center_horizontal|center"
+            >
+        <Button
+            style="@style/TextViewformeasurements"
+            android:id="@+id/btn"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/cinzel"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/border"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2f6699"
+            android:padding="10dp"
+            android:text="Save"
+            />
+
+
+        <Button
+            android:visibility="gone"
+            style="@style/TextViewformeasurements"
+            android:id="@+id/editbtn"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/cinzel"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/border"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2f6699"
+            android:padding="10dp"
+android:text="Update"
+            />
+
+        <Button
+            android:visibility="gone"
+            style="@style/TextViewformeasurements"
+            android:text="Delete"
+            android:id="@+id/deletebtn"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/cinzel"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/border"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2f6699"
+            android:padding="10dp"
+            />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

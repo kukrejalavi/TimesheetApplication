@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:id="@+id/first"
+        android:layout_margin="10dp"
+        android:textColor="@color/blackColor"
+        android:gravity="center"
+        android:inputType="textMultiLine"
+        android:fontFamily="@font/josefin_sans"
+        android:textSize="14dp"
+
+        />
+
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/second"
+        android:layout_weight="5"
+        android:layout_margin="10dp"
+        android:inputType="textMultiLine"
+        android:fontFamily="@font/josefin_sans"
+        android:textSize="14dp"
+        android:textColor="@color/blackColor"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/optional"
+        android:layout_weight="5"
+        android:layout_margin="10dp"
+        android:inputType="textMultiLine"
+        android:fontFamily="@font/josefin_sans"
+        android:textSize="14dp"
+        android:textColor="@color/blackColor"
+        android:gravity="center"
+        android:visibility="gone"
+        />
+
+    <ImageView
+
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:id="@+id/crossbtn"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:inputType="textMultiLine"
+        android:fontFamily="@font/josefin_sans"
+        android:background="@drawable/ic_clear"
+        android:textSize="14dp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#2f6699"
+        android:gravity="center"
+        />
+
+
+
+
+
+</LinearLayout>

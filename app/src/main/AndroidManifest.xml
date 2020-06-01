@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.timesheetapplication">
+
+    <application
+        android:name=".FirebaseContext"
+        android:allowBackup="true"
+        android:icon="@drawable/revolveslogo"
+        android:label="Revolves"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label">
+        <activity android:name=".AddCostCenter"
+            android:theme="@style/AppDialogTheme"
+            ></activity>
+        <activity android:name=".InternetMessagebox" />
+        <activity android:name=".EnterOtp" />
+        <activity android:name=".ResetOptions" />
+        <activity android:name=".ForgetPassword" />
+        <activity
+            android:name=".Admin.java.Profile"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Admin.java.SendMsg"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Employee.java.viewprojects"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".EmployeeMainPage"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Admin.java.SelectEmps"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+
+        <activity
+            android:name=".Admin.java.SelectProject"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+
+        <activity
+            android:name=".Admin.java.AdminNavigation"
+            android:label="@string/title_activity_admin_navigation"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
+
+        </activity>
+        <activity
+            android:name=".Login"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Employee.java.AllProjectsAssigned"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Employee.java.AddTimesheetMainPage"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Admin.java.MultiSelectCheckboxSpinner"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Admin.java.RejectReason"
+            android:theme="@style/AppDialogTheme"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Admin.java.AllTimesheets"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Admin.java.CreateAccount"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Admin.java.AddnewProject"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Employee.java.AddTimesheet"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+    </application>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+</manifest>

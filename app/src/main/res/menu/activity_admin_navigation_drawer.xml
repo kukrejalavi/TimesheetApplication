@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+
+
+
+<!--        <item-->
+<!--            android:id="@+id/ApproveTimesheets"-->
+<!--            android:title="Approve Timesheets" />-->
+<!--        <item-->
+<!--            android:id="@+id/empworking"-->
+<!--            android:title="Employees working"-->
+<!--            android:visible="false"-->
+<!--            />-->
+
+
+<!--        <item-->
+<!--            android:id="@+id/CurrentProjects"-->
+<!--            android:title="Current Projects" />-->
+
+<!--        <item-->
+<!--            android:id="@+id/AddProject"-->
+<!--            android:title="Add Project" />-->
+
+<!--        <item-->
+<!--            android:id="@+id/Assignproject"-->
+<!--            android:title="Assign project" />-->
+
+<!--        <item-->
+<!--            android:id="@+id/AssignSV"-->
+<!--            android:title="Assign Supervisor" />-->
+<!--        <item-->
+<!--            android:id="@+id/Svlist"-->
+<!--            android:title="Supervisors" />-->
+
+<!--        <item-->
+<!--            android:id="@+id/EmpList"-->
+<!--            android:title="Employees" />-->
+<!--        <item-->
+<!--            android:id="@+id/AddAccount"-->
+<!--            android:title="Add Account" />-->
+
+<!--        <item-->
+<!--            android:id="@+id/EditProfile"-->
+<!--            android:title="Edit Profile" />-->
+
+<!--        <item-->
+<!--            android:id="@+id/Sendmsg"-->
+<!--            android:title="Send Message" />-->
+
+<!--        <item-->
+<!--            android:id="@+id/Logout"-->
+<!--            android:title="Log out" />-->
+
+</menu>
